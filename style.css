@@ -12,6 +12,106 @@ section{
     padding: 0 100px;
     display: flex;
     align-items: center;
-    background: #5b941e;
+    background: #21283a;
     overflow-x: hidden;
+}
+
+section::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 150px;
+    transform: translateY(-50%);
+    width: 400px;
+    height: 400px;
+    background: #5b941e;
+    border-radius: 50%;
+    box-shadow: 0 0 20px #5b941e,
+    0 0 50px #5b941e,
+    0 0 150px #2b460f;
+    transition: 1s;
+}
+
+section.active::before{
+    background: #21283a;
+    box-shadow: 0 0 0 1200px #141821;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 100px;
+}
+
+header .logo{
+    font-size: 1.5em;
+    color: #fff;
+    letter-spacing: 1px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+header .logo span{
+    color: #5b941e;
+    border-bottom: 4px solid #5b941e;
+}
+
+header .toggle{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: url(img/menu.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px;
+    cursor: pointer;
+}
+
+header .toggle.active{
+    background: url(img/close.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px;
+}
+
+.me{
+    position: absolute;
+    bottom: 0;
+    right: 200px;
+    width: 300px;
+}
+
+.content{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.content .contentBx{
+    position: relative;
+    max-width: 600px;
+    z-index: 100;
+}
+
+.content .contentBx h4{
+    font-weight: 400;
+    color: #5b941e;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.content .contentBx h2{
+    font-size: 4em;
 }

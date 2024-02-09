@@ -9,9 +9,28 @@
 <body>
     <section class="banner">
         <header>
-            <a href="" class="logo">Porta<span>folio</span></a>
+            <a href="" class="logo">Port<span>afolio</span></a>
             <div class="toggle"></div>
         </header>
+        <img src="img/me.png" class="me">
+        <div class="content">
+            <div class="contentBx">
+                <h4>Hola,</h4>
+                <h2>Soy <span>Jeison Martinez</span></h2>
+                <h3>Estudiante Ingenieria De Software</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum deleniti vero veritatis suscipit quas iure optio, harum, dolore, fuga officiis perferendis! Maxime eum quod libero veniam consequuntur cum perspiciatis mollitia?</p>
+                <a href="">Contacta Conmigo</a>
+                <a href="">Descarga HV</a>
+            </div>
+        </div>
     </section>
+    <script>
+        let banner = document.querySelector('.banner');
+        let menuToggle = document.querySelector('.toggle');
+        menuToggle.onclick = function(){
+            menuToggle.classList.toggle('active');
+            banner.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
