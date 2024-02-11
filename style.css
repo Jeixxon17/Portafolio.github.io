@@ -113,5 +113,71 @@ header .toggle.active{
 }
 
 .content .contentBx h2{
-    font-size: 4em;
+    color: #fff;
+    font-size: 2.5em;
+    font-weight: 600;
+}
+
+.content .contentBx h2 span{
+    position: relative;
+    color: rgba(255, 255, 255, 0.1);
+    animation: displayText 9s infinite;
+    animation-delay: calc(-3s * var(--i));
+}
+@keyframes displayText{
+    0%{
+        display: inline-block;
+    }
+    33.33%, 100%{
+        display: none;
+    }
+}
+
+.content .contentBx h2 span::before{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: #5b941e;
+    overflow: hidden;
+    border-right: 4px solid #5b941e;
+    filter: drop-shadow(0 0 5px #5b941e) drop-shadow(0 0 25px #5b941e);
+    animation: animate 3s linear infinite;
+}
+@keyframes animate{
+    0%,10%,100%{
+        width: 0;
+    }
+    70%,90%{
+        width: 100%;
+    }
+}
+
+.content .contentBx p{
+    font-size: 1em;
+    color: #fff;
+    margin: 10px 0;
+}
+
+.content .contentBx a{
+    display: inline-block;
+    color: #fff;
+    padding: 10px 20px;
+    margin-right: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 2px solid #5b941e;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+.content .contentBx a:last-child{
+    background: #5b941e;
+    color: #141821;
+}
+
+.content .contentBx a:hover{
+    box-shadow: 0 0 15px #5b941e, 0 0 40px #5b941e;
 }
