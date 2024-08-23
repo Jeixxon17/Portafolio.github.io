@@ -1,73 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio Jeison</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <section class="banner">
-        <header>
-            <a href="" class="logo">Port<span>afolio</span></a>
-            <div class="toggle"></div>
-        </header>
-        <img src="img/me.png" class="me">
-        <div class="content">
-            <div class="contentBx">
-                <h4>Hola,</h4>
-                <h2>Soy 
-                    <span style="--i:0" data-text="Jeison.">Jeison.</span>
-                    <span style="--i:1" data-text="Estudiante.">Estudiante.</span>
-                    <span style="--i:2" data-text="Tecnologo.">Tecnologo.</span>
-                </h2>
-                <p>Desarrollador frontend especializado en crear interfaces atractivas y funcionales. Experto en HTML, CSS y JavaScript, con habilidades en PHP para el desarrollo web completo. Comprometido con la innovación y la calidad, transformo ideas en experiencias digitales excepcionales.</p>
-                <a href="javascript:void(0)" id="contactBtn">Contacta Conmigo</a>
-                <a href="">Descarga HV</a>
-            </div>
-        </div>
-        <ul class="sci">
-            <li><a href=""><img src="img/linkedin.png"></a></li>
-            <li><a href=""><img src="img/instagram.png"></a></li>
-            <li><a href=""><img src="img/x.png"></a></li>
-        </ul>
-        <ul class="menu">
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">¿Quien Soy?</a></li>
-            <li><a href="#">Estudios</a></li>
-            <li><a href="components/aplicaciones.html">Aplicaciones</a></li>
-            <li><a href="#">Certificaciones</a></li>
-            <li><a href="#">Contacta Conmigo</a></li>
-        </ul>
-    </section>
-    <script>
-        let banner = document.querySelector('.banner');
-        let menuToggle = document.querySelector('.toggle');
-        menuToggle.onclick = function(){
-            menuToggle.classList.toggle('active');
-            banner.classList.toggle('active');
-        }
-    </script>
-</body>
-
-<div id="contactModal" class="modal">
-    <div class="modal-content">
-        <span class="close">&times;</span>
-        <h2>Contacta Conmigo</h2>
-        <form>
-            <label for="name">Nombre:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Mensaje:</label>
-            <textarea id="message" name="message" required></textarea>
-
-            <button type="submit">Enviar</button>
-        </form>
-    </div>
-</div>
-<script src="main.js"></script>
-
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
