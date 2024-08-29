@@ -1,6 +1,8 @@
 import About from "./components/About"
+import Experiencies from "./components/Experiencies"
 import Hero from "./components/Hero"
 import Navbar from "./components/Navbar"
+import Projects from "./components/Projects"
 import Technologies from "./components/Technologies"
 
 const App = () => {
@@ -13,8 +15,10 @@ const App = () => {
         <div className="container mx-auto px-8">
           <Navbar/>
           <Hero/>
-          <About/>
+          <Projects/>
+          {/* <About/> */}
           <Technologies />
+          <Experiencies/>
         </div>
     </div>
   )
